@@ -1,0 +1,11 @@
+function countdown(n) {
+  // Caso base: Si n es menor que 1, devolvemos un arreglo vacío
+  if (n < 1) {
+    return [];
+  } else {
+    // Caso recursivo: Devolvemos el arreglo con n al frente y la llamada recursiva para n - 1
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);  // Agregamos n al principio del arreglo
+    return countArray;
+  }
+}

@@ -1,0 +1,17 @@
+var sum = 0;
+
+function addThree() {
+  sum = sum + 3;  // Añade 3 a sum
+}
+
+// Solo cambia el código debajo de esta línea
+function addFive() {
+  sum += 5;  // Añade 5 a sum
+}
+// Solo cambia el código arriba de esta línea
+
+// Llamamos a las funciones en el orden correcto
+addThree();  // Esto añade 3 a sum, ahora sum es 3
+var returnedValue = addFive();  // Esto añade 5 a sum, ahora sum es 8
+
+// La función addFive no retorna nada, por lo que returnedValue será undefined

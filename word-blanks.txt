@@ -1,0 +1,8 @@
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Cambia solo el código debajo de esta línea
+const wordBlanks = myNoun + " is a " + myAdjective + " animal, and it " + myVerb + " " + myAdverb + " to the park.";
+// Cambia solo el código encima de esta línea

@@ -1,0 +1,7 @@
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];  // Si la propiedad existe, devuelve su valor.
+  } else {
+    return "Not Found";  // Si no existe, devuelve "Not Found".
+  }
+}

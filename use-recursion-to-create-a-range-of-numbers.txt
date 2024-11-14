@@ -1,0 +1,11 @@
+function rangeOfNumbers(startNum, endNum) {
+  // Caso base: Si startNum es igual a endNum, devolvemos un arreglo con startNum
+  if (startNum > endNum) {
+    return [];
+  } else {
+    // Llamada recursiva: Creamos el arreglo con startNum y concatenamos la llamada recursiva
+    const rangeArray = rangeOfNumbers(startNum + 1, endNum);
+    rangeArray.unshift(startNum); // Añadimos startNum al principio del arreglo
+    return rangeArray;
+  }
+}
